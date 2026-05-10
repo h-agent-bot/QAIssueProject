@@ -16,6 +16,7 @@ cd QAIssueProject
 sh scripts/setup_venv.sh
 . .venv/bin/activate
 sh scripts/pre_submit.sh
+sh scripts/install_git_hooks.sh
 ```
 
 ## Agent Harness
@@ -54,3 +55,5 @@ repo_facts:
 - one issue per worktree branch under `.worktrees/`
 - open a PR for meaningful work
 - let review decide `approved` / `changes_requested` / `blocked`
+- read `prompts/developer.md` before issue work
+- use the repo-local pre-push hook; it runs `bash scripts/pre_submit.sh`

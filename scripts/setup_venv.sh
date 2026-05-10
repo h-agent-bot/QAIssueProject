@@ -9,3 +9,7 @@ if [ ! -d "$VENV" ]; then
 fi
 
 "$VENV/bin/python" -m pip install --upgrade pip >/dev/null
+
+if [ -x "$ROOT/scripts/install_git_hooks.sh" ]; then
+  "$ROOT/scripts/install_git_hooks.sh" >/dev/null
+fi
