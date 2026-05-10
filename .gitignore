@@ -1,0 +1,5 @@
+.venv/
+.worktrees/
+telemetry/
+runtime/
+state/
