@@ -57,3 +57,7 @@ repo_facts:
 - let review decide `approved` / `changes_requested` / `blocked`
 - read `prompts/developer.md` before issue work
 - use the repo-local pre-push hook; it runs `bash scripts/pre_submit.sh`
+
+## Smoke
+
+agentloop smoke
